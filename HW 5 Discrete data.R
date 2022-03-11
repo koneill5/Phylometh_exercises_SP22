@@ -69,6 +69,10 @@ plot(anc.ml)
 
 
 #### Things to delete:
+ape::read.tree(text=RCurl::getURL("https://raw.githubusercontent.com/lukejharmon/pcm/master/datafiles/squamate.phy"))
+read.csv(text=RCurl::getURL("https://raw.githubusercontent.com/lukejharmon/pcm/master/datafiles/brandley_table.csv"))
+
+
 discrete.data.old <- read.csv("https://raw.githubusercontent.com/lukejharmon/pcm/master/datafiles/squamate.phy", stringsAsFactors = FALSE) #I don't think this will work for the HW, so don't use
 
 cleandata <- treedata(tree, limbless)
