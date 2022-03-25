@@ -54,6 +54,10 @@ best.states <- colnames(reconstruction.info$lik.anc)[apply(reconstruction.info$l
 
 plotTree(tree, node.numbers=TRUE)
 
+reconstruction.info$lik.anc
+nodelabels(pie = reconstruction.info$lik.anc, picecol=c("black", "red"))
+
+
 #Label tree 
 label.tree
 select.reg <- character(length(tree$node.label))
